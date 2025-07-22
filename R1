@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piotr Pluta - Logistics & Operations Supervisor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: #4f46e5; /* indigo-600 */
+            border-radius: 50%;
+            left: -7px;
+            top: 4px;
+            border: 2px solid #e0e7ff; /* indigo-100 */
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #4f46e5; /* indigo-600 */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-2xl font-bold text-slate-800">Piotr Pluta</a>
+                </div>
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="#summary" class="text-slate-600 hover:text-indigo-600 transition duration-150 ease-in-out">Summary</a>
+                    <a href="#experience" class="text-slate-600 hover:text-indigo-600 transition duration-150 ease-in-out">Experience</a>
+                    <a href="#skills" class="text-slate-600 hover:text-indigo-600 transition duration-150 ease-in-out">Skills</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-150 ease-in-out">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <!-- Mobile menu button can be added here -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 md:pt-32 pb-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                Piotr Pluta
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-indigo-600 font-medium">
+                Logistics & Operations Supervisor
+            </p>
+            <div class="mt-8 flex justify-center items-center space-x-6 text-slate-600 flex-wrap gap-y-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    <span>Peter.p.pluta@gmail.com</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.024 11.024 0 006.254 6.254l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C6.477 18 2 13.523 2 8V5a1 1 0 011-1h.001z"></path></svg>
+                    <span>(908) 494-2994</span>
+                </div>
+                 <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Hightstown, NJ</span>
+                </div>
+            </div>
+             <div class="mt-8">
+                <a href="https://www.linkedin.com/in/piotr-pluta-05b769368/" target="_blank" class="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-150 ease-in-out">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>View LinkedIn Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Professional Summary -->
+        <section id="summary" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Professional Summary</h2>
+            <div id="resume-summary-text" class="text-lg leading-relaxed">
+                Accomplished and strategic Logistics Supervisor with a 15-year record of progressive leadership and operational excellence at Fenix Parts. An expert in transforming fleet logistics, scaling a team from 8 to 14 drivers and engineering a system to handle 1,000+ weekly deliveries. Combines hands-on technical skill with a talent for team leadership, process optimization, and financial oversight. Proven to be a loyal and indispensable asset, rising from an entry-level technician to a key figure in the company's operational command.
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Professional Experience</h2>
+            <div id="resume-experience-text" class="border-l-2 border-indigo-200 pl-8 relative">
+                
+                <div class="mb-12">
+                     <div class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-2 top-1"></div>
+                    <h3 class="text-2xl font-bold text-slate-900">Fenix Parts</h3>
+                    <p class="text-md text-slate-500">Rahway, NJ | May 2009 - Present</p>
+                    <p class="mt-2 italic text-slate-600">A 15-year tenure showcasing consistent promotion and mastery of company operations, rising from an entry-level role to key leadership.</p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="relative timeline-item">
+                        <h4 class="text-xl font-semibold text-indigo-700">Dispatcher & Fleet Supervisor</h4>
+                        <ul class="mt-2 list-disc list-inside space-y-2 text-slate-600">
+                            <li>Spearheaded the expansion of the driver team by 75% (from 8 to 14 drivers) to meet escalating business demands.</li>
+                            <li>Engineered and directed daily logistics for a high-volume operation, successfully executing over 1,000 deliveries per week.</li>
+                            <li>Pioneered the integration of the Samsara GPS and camera systems across the fleet, enhancing route efficiency and driver accountability.</li>
+                            <li>Cultivated a culture of excellence through effective coaching, performance management, and direct operational leadership.</li>
+                            <li>Entrusted with full financial responsibility for daily logistics, including cash, check, and credit card reconciliation and bank deposits.</li>
+                        </ul>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h4 class="text-xl font-semibold text-indigo-700">Quality Control Manager</h4>
+                        <ul class="mt-2 list-disc list-inside space-y-2 text-slate-600">
+                            <li>Commanded the quality assurance division, guaranteeing all parts met stringent standards before shipment and preventing revenue loss from returns.</li>
+                            <li>Acted as the critical link between the technical and sales departments, resolving discrepancies to protect customer relationships.</li>
+                            <li>Orchestrated the flow of all incoming and outgoing parts, managing relationships with key shipping partners like UPS.</li>
+                        </ul>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h4 class="text-xl font-semibold text-indigo-700">Returns & Quality Control Specialist</h4>
+                        <ul class="mt-2 list-disc list-inside space-y-2 text-slate-600">
+                             <li>Mastered the industry-standard ARA damage coding system to accurately assess and process all incoming returns.</li>
+                             <li>Designed and implemented a streamlined workflow for inspecting and restocking returned inventory.</li>
+                        </ul>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h4 class="text-xl font-semibold text-indigo-700">Light Technician</h4>
+                        <ul class="mt-2 list-disc list-inside space-y-2 text-slate-600">
+                            <li>Selected for an entry-level role and quickly recognized for superior technical skill and work ethic, leading to a series of rapid promotions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Grid -->
+        <section id="skills" class="mb-16">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800 section-title">Skills & Proficiencies</h2>
+                    <div id="resume-skills-text" class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-2">Logistics & Fleet Command</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Route Architecture (EZ-Runner)</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Dispatch & Scheduling</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Fleet Maintenance</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">GPS Tracking (Samsara)</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Driver Performance Management</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Forklift Operation</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-2">Leadership & Operations</h3>
+                             <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Team Building & Mentorship</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Quality Assurance</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Inventory Control & Audits</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Financial Reconciliation</span>
+                                <span class="bg-slate-200 text-slate-800 text-sm font-medium px-3 py-1 rounded-full">Hiring & Staff Development</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-2">Technical Proficiencies</h3>
+                             <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Pinnacle Professional</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Microsoft 365</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Google Workspace</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Palfinger Lift Gate Systems</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">On-board Camera/GPS Installation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <h2 class="text-3xl font-bold text-slate-800 section-title">Training & Education</h2>
+                     <div class="space-y-6">
+                         <div>
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-2">Certifications & Professional Training</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Six Sigma - Process Improvement Methodology</li>
+                                <li>Smith System - Advanced Driver Safety Training</li>
+                                <li>Ecomply Safety Training</li>
+                                <li>Forklift Operator Certified</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-2">Education</h3>
+                             <div class="space-y-3">
+                                 <div>
+                                     <p class="font-medium text-slate-800">SUNY Polytechnic Institute</p>
+                                     <p class="text-sm text-slate-500">Coursework in Electrical Engineering | 2008 – 2009</p>
+                                 </div>
+                                 <div>
+                                     <p class="font-medium text-slate-800">Manasquan High School</p>
+                                     <p class="text-sm text-slate-500">High School Diploma | Graduated 2008</p>
+                                 </div>
+                             </div>
+                        </div>
+                     </div>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-800 text-white">
+        <div class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold">Get In Touch</h2>
+            <p class="mt-4 max-w-2xl mx-auto">I'm currently seeking new opportunities and would be happy to discuss how my skills in logistics and operations can benefit your company.</p>
+            <div class="mt-8">
+                <a href="mailto:Peter.p.pluta@gmail.com" class="inline-block bg-indigo-500 text-white px-8 py-3 rounded-md hover:bg-indigo-600 transition duration-150 ease-in-out">
+                    Email Me
+                </a>
+            </div>
+            <div class="mt-10 pt-8 border-t border-slate-700 text-sm text-slate-400">
+                <p>&copy; 2024 Piotr Pluta. Website designed to be a professional resume.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
